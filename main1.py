@@ -15,7 +15,8 @@ def get_test():
 def get_square(num: int):
     return pow(num, 2) # here I return an int
 
-class InputObj(BaseModel):
+
+class InputObj(BaseModel): # create my pydantic model
     num: int
 
 @app.post('/square')
